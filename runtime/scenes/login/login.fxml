@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="layout" fx:id="loginPane" maxHeight="519.0" maxWidth="450.0" minHeight="519.0" minWidth="450.0" styleClass="background" stylesheets="@login.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <VBox layoutX="251.0" layoutY="201.0" spacing="15.0">
+      <children>
+         <ImageView pickOnBounds="true" preserveRatio="true" style="-fx-view-order: 2;">
+            <image>
+               <Image url="@../../images/icons/manVsPlan.png" />
+            </image>
+            <viewport>
+               <Rectangle2D />
+            </viewport>
+         </ImageView>
+         <TextArea id="online" editable="false" maxWidth="100.0" minWidth="78.0" prefHeight="65.0" prefWidth="100.0" text="Онлайн: &#10;%s человек">
+            <VBox.margin>
+               <Insets left="40.0" />
+            </VBox.margin>
+            <opaqueInsets>
+               <Insets left="5.0" />
+            </opaqueInsets>
+            <padding>
+               <Insets left="5.0" />
+            </padding>
+            <font>
+               <Font size="14.0" />
+            </font></TextArea>
+      </children>
+   </VBox>
+   <ImageView id="oblako1" layoutX="472.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../images/oblako1.png" />
+      </image>
+   </ImageView>
+   <ImageView id="oblako2" layoutX="540.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../images/oblako2.png" />
+      </image>
+   </ImageView>
+    <AnchorPane id="header" prefHeight="25.0" prefWidth="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <children>
+            <!-- Кнопки управления -->
+            <HBox id="controls" layoutX="378.0" layoutY="15.0" prefHeight="24.0" prefWidth="50.0" spacing="10.0" AnchorPane.topAnchor="10.0">
+                <fx:include source="../../components/buttons/minimize.fxml" />
+                <fx:include source="../../components/buttons/exit.fxml" />
+            </HBox>
+            <ComboBox id="authList" layoutX="-4.0" layoutY="7.0" maxWidth="1.7976931348623157E308" minHeight="1.0" visible="false" />
+        </children>
+      <padding>
+         <Insets top="5.0" />
+      </padding>
+    </AnchorPane>
+    <VBox fillWidth="false" layoutX="91.0" layoutY="128.0" pickOnBounds="false" prefHeight="282.0" prefWidth="185.0" spacing="3.0" AnchorPane.bottomAnchor="109.0" AnchorPane.leftAnchor="91.0" AnchorPane.rightAnchor="174.0" AnchorPane.topAnchor="128.0">
+        <children>
+            <StackPane id="content" alignment="TOP_RIGHT" prefHeight="94.0" prefWidth="273.0" />
+            <Button id="authButton" defaultButton="true" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="178.0" prefHeight="70.0" prefWidth="178.0" styleClass="unactiveButton" text="%runtime.scenes.login.goAuth" textFill="WHITE">
+                <VBox.margin>
+                    <Insets top="5.0" />
+                </VBox.margin>
+            <font>
+               <Font size="22.0" />
+            </font>
+            </Button>
+         <Button id="createAccount" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" maxHeight="70.0" maxWidth="178.0" minHeight="70.0" minWidth="178.0" mnemonicParsing="false" text="%runtime.scenes.login.createAccount" textAlignment="CENTER" textFill="WHITE">
+            <font>
+               <Font size="20.0" />
+            </font></Button>
+                <fx:include source="../../components/buttons/settings.fxml" />
+        </children>
+    </VBox>
+      <ImageView id="logo" fitHeight="61.0" fitWidth="173.0" layoutX="140.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+              <Image url="@../../images/logo.png" />
+          </image>
+      </ImageView>
+   <HBox alignment="CENTER" layoutX="1.0" layoutY="467.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="450.0" spacing="15.0">
+      <children>
+         <ImageView id="vk" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../images/icons/vk.png" />
+            </image>
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </ImageView>
+         <ImageView id="ds" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../images/icons/ds.png" />
+            </image>
+         </ImageView>
+      </children>
+   </HBox>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="leftpanel" prefHeight="80.0" prefWidth="200.0" stylesheets="@leftpanel.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+      <AnchorPane maxHeight="-Infinity" prefHeight="80.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+          <fx:include source="../buttons/back.fxml" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="34.0" />
+          <Pane id="userBlock" AnchorPane.leftAnchor="54.0" AnchorPane.topAnchor="34.0">
+            <children>
+              <fx:include source="../userBlock.fxml" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="34.0" />
+            </children>
+          </Pane>
+         </children>
+      </AnchorPane>
+      <FlowPane alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0">
+         <children>
+          <VBox alignment="CENTER">
+            <children>
+              <!-- Блок сервера -->
+              <Pane id="serverButton" />
+            </children>
+          </VBox>
+         </children>
+      </FlowPane>
+  </children>
+</AnchorPane>

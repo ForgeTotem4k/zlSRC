@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+
+<!-- Кнопка свернуть -->
+
+<Button id="minimize" styleClass="icon-button" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <graphic>
+      <Rectangle arcHeight="3.06" arcWidth="12.45" fill="WHITE" height="3.06" scaleX="1.5" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" styleClass="icon-button-color" translateY="5.0" width="12.45">
+         <rotationAxis>
+            <Point3D x="1.0" y="1.0" z="1.0" />
+         </rotationAxis></Rectangle>
+   </graphic>
+</Button>

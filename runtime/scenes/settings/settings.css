@@ -1,0 +1,62 @@
+/* RAM настройки */
+Slider>.track {
+    -fx-background-color: #447d31;
+    -fx-pref-height: 5px;
+}
+Slider>.thumb {
+    -fx-background-color: #3ba45e;
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+}
+Slider .axis {
+    -fx-tick-label-fill: #447d31;
+    -fx-tick-label-size: 12px;
+}
+
+#ramLabel {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #3b4a5e;
+}
+.settings-header {
+    -fx-font-size: 14px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #3b4a5e;
+}
+.settings-label-header {
+    -fx-font-size: 14px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #3b4a5e;
+}
+.settings-label {
+    -fx-text-fill: #3b4a5e;
+}
+#folder {
+    -fx-background-radius: 10px;
+}
+
+
+#changeDir {
+    -fx-background-color: -fx-colors-base;
+    -fx-background-radius: 0 10px 10px 0;
+    -fx-text-fill: -fx-colors-text;
+}
+
+#save {
+    -fx-font-family: "Myriad";
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-align: center;
+    -fx-background-color: #f4b940;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-width: 0.5px;
+    -fx-border-color: #a35817;
+    -fx-effect: dropshadow(three-pass-box, rgba(163,88,23,0.5), 5, 0.7, 1, 1);
+}
+
+#save:hover,
+#save:pressed {
+    -fx-fill: -fx-green-hover;
+    -fx-cursor: hand;
+}

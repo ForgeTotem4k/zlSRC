@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="layout" maxWidth="-Infinity" prefHeight="520.0" prefWidth="450.0" styleClass="background" stylesheets="@settings.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane id="header" prefHeight="25.0" prefWidth="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <HBox id="controls" layoutY="2.0" prefHeight="22.0" prefWidth="72.0" spacing="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+            <fx:include source="../../components/buttons/minimize.fxml" />
+            <fx:include source="../../components/buttons/exit.fxml" />
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+        </HBox>
+       <fx:include source="../../components/buttons/back.fxml" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0" />
+      <padding>
+         <Insets top="5.0" />
+      </padding>
+    </AnchorPane>
+    <Label layoutX="138.0" layoutY="105.0" maxWidth="400.0" prefHeight="32.0" prefWidth="174.0" styleClass="scene-header" text="%runtime.scenes.settings.header" textFill="#3b4a5e" />
+    <AnchorPane id="settings-list" visible="false" />
+    <ScrollPane id="settingslist" hbarPolicy="NEVER" layoutY="137.0" prefHeight="224.0" prefWidth="450.0" vbarPolicy="NEVER">
+        <content>
+            <VBox alignment="CENTER" maxWidth="-Infinity" prefHeight="247.0" prefWidth="450.0">
+                <children>
+                    <HBox prefHeight="20.0" prefWidth="453.0">
+                        <children>
+                            <Label styleClass="settings-header" text="%runtime.scenes.settings.header.ram">
+                                <padding>
+                                    <Insets left="50.0" />
+                                </padding>
+                                <HBox.margin>
+                                    <Insets bottom="30.0" />
+                                </HBox.margin>
+                            </Label>
+                            <Label id="ramLabel">
+                                <padding>
+                                    <Insets left="30.0" />
+                                </padding>
+                                <HBox.margin>
+                                    <Insets left="50.0" />
+                                </HBox.margin>
+                            </Label>
+                        </children>
+                    </HBox>
+                    <Slider id="ramSlider" blockIncrement="20.0" prefHeight="0.0" showTickMarks="true">
+                        <VBox.margin>
+                            <Insets top="5.0" />
+                        </VBox.margin>
+                        <padding>
+                            <Insets left="20.0" right="20.0" />
+                        </padding>
+                    </Slider>
+                    <!-- Папка проекта-->
+                    <HBox id="folder" alignment="CENTER" maxWidth="-Infinity" prefHeight="71.0" prefWidth="360.0">
+                        <Label text="Директория" textFill="#3b4a5e">
+                            <font>
+                                <Font name="Montserrat Regular" size="12.0" />
+                            </font>
+                        </Label>
+                        <!-- Путь к папкам-->
+                        <Hyperlink id="path" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="176.0" text="C:\Users" HBox.hgrow="ALWAYS">
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                        </Hyperlink>
+                        <padding>
+                            <Insets left="20.0" />
+                        </padding>
+                    </HBox>
+                </children>
+            </VBox>
+        </content>
+    </ScrollPane>
+        <Button id="save" layoutX="138.0" layoutY="371.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="174.0" text="СОХРАНИТЬ" textFill="WHITE">
+      <font>
+         <Font size="16.0" />
+      </font></Button>
+    <rotationAxis>
+        <Point3D />
+    </rotationAxis>
+</AnchorPane>

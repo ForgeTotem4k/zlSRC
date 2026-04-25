@@ -1,0 +1,156 @@
+/*-- Вертикальная полоса на главной сцене --*/
+.vline {
+    -fx-background-color: -fx-glass;
+}
+#loginLeftPane{
+    -fx-padding: 32px;
+}
+/*-- Ввод данных --*/
+#login,
+PasswordField {
+    -fx-background-color: -fx-glass;
+    -fx-font-size: 10pt;
+    -fx-font-family: "Myriad";
+    -fx-text-fill: -fx-header;
+    -fx-font-weight: bold;
+    -fx-cursor: text;
+}
+PasswordField:focused,
+#login:focused {
+    -fx-text-fill: -fx-header;
+}
+#1st,
+#2st,
+#3st,
+#4st,
+#5st,
+#6st {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0.0 5.0 0.0 5.0;
+    -fx-padding: 0;
+    -fx-hgap: 0;
+    -fx-vgap: 0;
+    -fx-background-radius: 0;
+}
+
+/*-- Метод авторизации --*/
+#authList {
+    -fx-background-color: -fx-glass;
+    -fx-background-radius: 10px;
+}
+/*-- Поля --*/
+#login {
+      -fx-background-color: #c5c6dc;
+      -fx-background-radius: 5px;
+      -fx-border-radius: 5px;
+      -fx-border-width: 0;
+      -fx-prompt-text-fill: -fx-header;
+
+}
+PasswordField, #totp {
+      -fx-background-color: #c5c6dc;
+      -fx-background-radius: 5px;
+      -fx-border-radius: 5px;
+      -fx-border-width: 0;
+      -fx-prompt-text-fill: -fx-header;
+}
+/*-- Ссылки --*/
+#createAccount {
+    -fx-font-family: "Myriad";
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-wrap-text: true;
+    -fx-text-align: left;
+    -fx-line-spacing: -10;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../../images/buttons/reg.png");
+    -fx-background-size: 175,58;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 10px;
+
+}
+#createAccount:hover,
+#createAccount:pressed {
+    -fx-background-image: url("../../images/buttons/reg-hover.png");
+    -fx-background-size: 174 ,50;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+}
+#forgotPass {
+    -fx-font-weight: bold;
+    -fx-font-size: 9px;
+    -fx-text-align: right;
+    -fx-fill: -fx-colors-text-secondary;
+}
+#forgotPass:hover,
+#forgotPass:pressed {
+    -fx-fill: -fx-colors-text-hover;
+    -fx-cursor: hand;
+}
+.textLogin {
+    -fx-fill: -fx-colors-text-secondary;
+    -fx-font-size: 9px;
+    -fx-text-align: left;
+}
+Rectangle {
+    -fx-fill: -fx-colors-text-secondary;
+    -fx-stroke: -fx-colors-text-secondary;
+}
+
+.passwordPane{
+   -fx-background-color: -fx-colors-base;
+   -fx-border-radius: 13px;
+   -fx-background-radius: 13px;
+}
+/*-- Веб авторизация (НЕ найдено в FXML) --*/
+/* #webAuth {
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-text-align: center;
+    -fx-text-fill: -fx-colors-base;
+    -fx-background-color: -fx-green;
+} */
+/*-- Кнопка входа --*/
+#authButton {
+    -fx-font-family: "Myriad";
+    -fx-font-weight: bold;
+    -fx-text-align: center;
+    -fx-font-size: 22px;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../../images/buttons/play.png");
+    -fx-background-size: 175,58;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#authButton:hover{
+    -fx-background-image: url("../../images/buttons/play-hover.png");
+    -fx-background-size: 174,50;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-cursor: hand;
+
+}
+
+#settingsb{
+    -fx-translate-x: 2px;
+    -fx-background-radius: 5px;
+    -fx-border-width: 0;
+    -fx-border-radius: 5px;
+    -fx-background-color: #ffffff;
+}
+
+#settingsb:hover{
+    -fx-background-color: -fx-colors-text;
+    -fx-effect: dropshadow(three-pass-box, rgba(43,82,107,0.5), 3, 1, 1, 1);
+}
+
+#vk,
+#ds {
+    -fx-cursor: hand;
+}
+
+/* --END-- */

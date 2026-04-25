@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane depthTest="DISABLE" prefWidth="219.0" styleClass="notification" stylesheets="@components.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox id="content" layoutX="15.0" layoutY="15.0" prefWidth="219.0">
+            <children>
+                <Label fx:id="notificationHeading" text="%runtime.scenes.components.notification.notificationHeading">
+                    <rotationAxis>
+                        <Point3D />
+                    </rotationAxis>
+                </Label>
+                <Label fx:id="notificationText" prefHeight="40.0" prefWidth="219.0" text="%runtime.scenes.components.notification.notificationText" wrapText="true" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

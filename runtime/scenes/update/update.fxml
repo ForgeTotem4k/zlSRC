@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="layout" prefHeight="520.0" prefWidth="450.0" styleClass="background" stylesheets="@update.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+
+    <!-- Навбар -->
+    <AnchorPane id="header" prefHeight="80.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <Label styleClass="scene-header" text="%runtime.scenes.update.headingDialog" visible="false" AnchorPane.leftAnchor="74.0" AnchorPane.topAnchor="34.0" />
+        <!-- Кнопки управления -->
+        <HBox id="controls" layoutX="383.0" layoutY="2.0" prefHeight="24.0" prefWidth="74.0" spacing="10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+            <fx:include source="../../components/buttons/minimize.fxml" />
+            <fx:include source="../../components/buttons/exit.fxml" />
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+        </HBox>
+      <Label layoutX="90.0" layoutY="50.0" prefHeight="17.0" prefWidth="191.0" text="Загрузка клиента" textFill="#080d9e">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+    </AnchorPane>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="51.0" AnchorPane.topAnchor="80.0">
+        <children>
+            <AnchorPane prefHeight="323.0" prefWidth="348.0" styleClass="anchor-block-information" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <children>
+
+                    <TextArea id="outputUpdate" editable="false" layoutX="22.0" layoutY="55.0" prefHeight="92.0" prefWidth="175.0" wrapText="true" AnchorPane.bottomAnchor="227.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="55.0" />
+      
+                    <!-- Информация-->
+                    <VBox id="speedOn" alignment="CENTER" layoutX="109.0" layoutY="257.0" prefHeight="61.0" prefWidth="111.0">
+                        <Label id="speed" alignment="CENTER" maxWidth="1.7976931348623157E308" text="214" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets bottom="10.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label id="speed-text" alignment="CENTER" maxWidth="1.7976931348623157E308" text="MB/S" textAlignment="CENTER" />
+                        <Label id="volume" alignment="CENTER" contentDisplay="RIGHT" opacity="0.28" text="[240 MB]" />
+                    </VBox>
+                  <StackPane id="update-detail" layoutY="284.0" prefHeight="34.0" prefWidth="111.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0">
+                      <children>
+                          <Label id="speedErr" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="speedError" text="ERR" visible="false" />
+                      </children>
+                  </StackPane>
+                </children>
+            </AnchorPane>
+
+            <!-- Прогрессбар-->
+            <ProgressBar id="progress" prefHeight="17.0" prefWidth="348.0" progress="0.3" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+        </children>
+    </AnchorPane>
+</AnchorPane>

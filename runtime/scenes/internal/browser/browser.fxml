@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="layout" minWidth="402.0" prefHeight="520.0" prefWidth="450.0" styleClass="background" stylesheets="@register.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <VBox fx:id="registerPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="450.0" spacing="10.0">
+        <children>
+            <ImageView fitHeight="43.0" fitWidth="226.0">
+                <image>
+                    <Image url="@../../../images/logo.png" />
+                </image>
+            <VBox.margin>
+               <Insets top="10.0" />
+            </VBox.margin>
+            </ImageView>
+         <TextArea editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="17.0" prefWidth="225.0" text="ТВОЙ ЛЮБИМЫЙ ЛАУНЧЕР&#10;">
+            <font>
+               <Font name="MyriadPro-Regular" size="17.0" />
+            </font>
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+            <padding>
+               <Insets top="5.0" />
+            </padding>
+         </TextArea>
+            <StackPane id="content" fx:id="content" />
+            <TextField fx:id="loginField" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="224.0" promptText="Придумайте логин" styleClass="auth-field">
+                <VBox.margin>
+                    <Insets />
+                </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="passwordField" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="224.0" promptText="Придумайте пароль" styleClass="auth-field">
+                <VBox.margin>
+                    <Insets />
+                </VBox.margin>
+            </PasswordField>
+            <PasswordField fx:id="confirmField" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="224.0" promptText="Введите пароль снова" styleClass="auth-field">
+                <VBox.margin>
+                    <Insets top="2.0" />
+                </VBox.margin>
+            </PasswordField>
+            <Button id="registerButton" alignment="CENTER" mnemonicParsing="false" prefHeight="65.0" prefWidth="225.0" text="СОЗДАТЬ ПЕРСОНАЖА" textFill="WHITE">
+                <VBox.margin>
+                    <Insets top="10.0" />
+                </VBox.margin>
+                <font>
+                    <Font size="24.0" />
+                </font>
+            </Button>
+         <HBox alignment="CENTER" prefHeight="34.0" prefWidth="322.0" spacing="15.0">
+             <children>
+                 <ImageView id="vk" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                         <Image url="@../../../images/icons/vk.png" />
+                     </image>
+                     <HBox.margin>
+                         <Insets />
+                     </HBox.margin>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+                 </ImageView>
+                 <ImageView id="ds" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                         <Image url="@../../../images/icons/ds.png" />
+                     </image>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+                 </ImageView>
+             </children>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <cursor>
+               <Cursor fx:constant="DEFAULT" />
+            </cursor>
+            <VBox.margin>
+               <Insets top="40.0" />
+            </VBox.margin>
+         </HBox>
+        </children>
+        <padding>
+            <Insets left="40.0" right="40.0" top="5.0" />
+        </padding>
+    </VBox>
+    <AnchorPane id="header" prefHeight="32.0" prefWidth="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <children>
+            <!-- Кнопки управления -->
+            <HBox id="controls" alignment="CENTER_RIGHT" layoutY="7.0" prefHeight="32.0" prefWidth="435.0" spacing="20.0">
+                <fx:include source="../../../components/buttons/minimize.fxml" />
+                <fx:include source="../../../components/buttons/exit.fxml" />
+                <padding>
+                    <Insets right="5.0" />
+                </padding>
+            </HBox>
+        </children>
+      <rotationAxis>
+         <Point3D />
+      </rotationAxis>
+    </AnchorPane>
+       <fx:include source="../../../components/buttons/back.fxml" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+    <stylesheets>
+        <URL value="@register.css" />
+        <URL value="@../../../styles/global.css" />
+    </stylesheets>
+</AnchorPane>

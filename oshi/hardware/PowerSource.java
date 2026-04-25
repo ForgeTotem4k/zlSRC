@@ -1,0 +1,61 @@
+package oshi.hardware;
+
+import java.time.LocalDate;
+import oshi.annotation.concurrent.ThreadSafe;
+
+@ThreadSafe
+public interface PowerSource {
+  String getName();
+  
+  String getDeviceName();
+  
+  double getRemainingCapacityPercent();
+  
+  double getTimeRemainingEstimated();
+  
+  double getTimeRemainingInstant();
+  
+  double getPowerUsageRate();
+  
+  double getVoltage();
+  
+  double getAmperage();
+  
+  boolean isPowerOnLine();
+  
+  boolean isCharging();
+  
+  boolean isDischarging();
+  
+  CapacityUnits getCapacityUnits();
+  
+  int getCurrentCapacity();
+  
+  int getMaxCapacity();
+  
+  int getDesignCapacity();
+  
+  int getCycleCount();
+  
+  String getChemistry();
+  
+  LocalDate getManufactureDate();
+  
+  String getManufacturer();
+  
+  String getSerialNumber();
+  
+  double getTemperature();
+  
+  boolean updateAttributes();
+  
+  public enum CapacityUnits {
+    MWH, MAH, RELATIVE;
+  }
+}
+
+
+/* Location:              C:\Users\forge\zLauncher\Launcher.jar!\oshi\hardware\PowerSource.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="519.0" prefWidth="450.0" styleClass="background" stylesheets="@serverinfo.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <!-- Навбар -->
+    <AnchorPane id="header" layoutX="234.0" prefHeight="80.0" prefWidth="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <AnchorPane prefHeight="80.0" prefWidth="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label id="serverName" layoutX="201.0" prefHeight="32.0" prefWidth="114.0" styleClass="scene-header" text="ServerName" visible="false" AnchorPane.leftAnchor="201.0" AnchorPane.topAnchor="34.0" />
+                <!-- Кнопки управления -->
+                <HBox id="controls" spacing="10.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="34.0">
+                    <fx:include source="../../components/buttons/minimize.fxml" />
+                    <fx:include source="../../components/buttons/exit.fxml" />
+                </HBox>
+            </children>
+        </AnchorPane>
+    </AnchorPane>
+    <fx:include source="../../components/panels/leftpanel.fxml" />
+    <AnchorPane layoutY="70.0" prefHeight="321.0" prefWidth="177.0" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="70.0">
+        <children>
+            <ScrollPane id="serverDescriptionPane" fitToWidth="true" hbarPolicy="NEVER" layoutX="1.0" pannable="true" prefHeight="321.0" prefWidth="177.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <content>
+                    <Label alignment="TOP_LEFT" maxWidth="1.7976931348623157E308" prefHeight="231.0" prefWidth="147.0" text="Server description" wrapText="true" />
+                </content>
+            </ScrollPane>
+        </children>
+    </AnchorPane>
+        <fx:include source="../../components/buttons/settings.fxml" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="450.0" />
+</AnchorPane>

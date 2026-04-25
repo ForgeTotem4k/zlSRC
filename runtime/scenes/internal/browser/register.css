@@ -1,0 +1,66 @@
+
+#registerButton {
+    -fx-font-family: "Myriad";
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-align: center;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../../../images/buttons/create.png");
+    -fx-background-size: 224,58;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    /*-fx-background-color: #f4b940;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-width: 0.5px;
+    -fx-border-color: #a35817;
+    -fx-effect: dropshadow(three-pass-box, rgba(163,88,23,0.5), 5, 0.7, 1, 1);*/
+}
+
+#registerButton:hover,
+#registerButton:pressed {
+    -fx-background-image: url("../../../images/buttons/create-hover.png");
+    -fx-background-size: 223,65;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-cursor: hand;
+}
+
+#back{
+    -fx-font-family: "Impact";
+    -fx-font-size: 19px;
+    -fx-text-fill: #fff;
+	-fx-background-color: transparent;
+
+}
+button{    -fx-text-fill: #ffffff;
+    -fx-font-family: "Impact";
+    -fx-font-size: 19px;}
+Button > .text {
+
+    -fx-effect: dropshadow( gaussian, rgba(0, 0, 0, 0.28), 8, 0.6 , 2 , 2 )
+}
+TextField,PasswordField {
+    -fx-background-radius: 3px;
+    -fx-background-color: #3b4a5e;
+    -fx-font-size: 12pt;
+
+    -fx-prompt-text-fill: -fx-colors-text;
+    -fx-text-fill: -fx-colors-text;
+    -fx-font-family: "Myriad";
+
+}
+.errorLabel {
+    -fx-border-radius: 1px;
+    -fx-border-color: #d20000;
+    -fx-border-radius: 3;
+    -fx-font-family: "Roboto";
+    -fx-background-color: rgba(86, 6, 6, 0.35);
+    -fx-background-radius: 3;
+    -fx-text-fill: #dadada;
+}
+
+TextArea{
+-fx-color:#3b4a5e;
+-fx-text-align: center;
+}

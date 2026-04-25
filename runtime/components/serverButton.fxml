@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="serverButton" fx:id="serverButton" minWidth="-Infinity" prefHeight="150.0" prefWidth="230.0" styleClass="b-20" stylesheets="@components.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <Region id="serverLogo" prefHeight="50.0" prefWidth="200.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+
+    <!-- Информация сервера -->
+    <Label id="nameServer" alignment="CENTER" layoutX="5.0" layoutY="106.0" prefHeight="29.0" text="SERVERNAME" textAlignment="CENTER" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+    <Label id="genreServer" alignment="CENTER" layoutX="5.0" layoutY="128.0" prefHeight="17.0" prefWidth="189.0" text="HITECH" textAlignment="CENTER" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+    <AnchorPane prefHeight="70.0" prefWidth="200.0" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+        <children>
+            <Label id="online" alignment="CENTER" disable="true" maxWidth="40.0" prefWidth="40.0" styleClass="online-green" text="?" visible="false" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="-6.0" />
+            <Label id="speedLoad" alignment="CENTER" maxWidth="75.0" prefWidth="75.0" styleClass="online-violet" text="0 m/s" visible="false" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="-6.0" />
+            <Button id="reset" maxWidth="75.0" prefWidth="75.0" text="%runtime.components.serverButton.reset" visible="false" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="-6.0">
+                <tooltip>
+                    <Tooltip anchorLocation="WINDOW_BOTTOM_LEFT" text="%runtime.components.serverButton.resetTooltip" />
+                </tooltip>
+            </Button>
+            <Button id="save" prefHeight="67.0" prefWidth="200.0" text="%runtime.components.serverButton.save" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+        </children>
+    </AnchorPane>
+</AnchorPane>
